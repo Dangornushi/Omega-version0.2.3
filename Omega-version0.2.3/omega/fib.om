@@ -1,0 +1,18 @@
+let one = 1;
+let two = 2;
+let n = 2;
+let a = 0;
+
+def :ex():
+    println_fin;
+    exit;
+
+def :main():
+    if a < 1 = {ex()};
+    calc a = n - one;
+    calc x = n - two;
+    <+> x = x + a;
+    println_x;
+    end;
+
+main();

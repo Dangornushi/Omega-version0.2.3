@@ -1,0 +1,53 @@
+{
+    "name": "omega-extension",
+    "version": "0.2.0",
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "main": "./extension.js",
+    "activationEvents": [
+        "*"
+    ],
+    "contributes": {
+        "commands" :[
+            {
+                "command": "omega.test",
+                "title": "Omega: test"
+            },
+            {
+                "command": "omega.formatfile",
+                "title": "Omega: format file"
+            }
+        ],
+        "languages": [
+            {
+                "id": "omega",
+                "extensions": [".om"]
+            }
+        ],
+        "grammars": [{
+            "language": "omega",
+            "scopeName": "source.omega",
+            "path": ".vscode/omega.tmLanguage.json"
+            }
+        ],
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "omega-view",
+                    "title": "omega explorer",
+                    "icon": "img/Omega.png"
+                }
+            ]
+        },
+        "views": {
+            "omega-view": [
+                {
+                    "id": "omega",
+                    "name": "omega"
+                }
+            ]
+        }
+    }
+
+}

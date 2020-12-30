@@ -1,0 +1,19 @@
+def :main():
+    input">"inp;
+    if inp == dango = {test()};
+    println_残念！;
+    end;
+
+def :test():
+    println_正解!!;
+    println_ゲームを続けるならｙ、やめるならｎを入力してください。;
+    input"=>"ans;
+    if ans == y = {start()};
+    exit;
+
+def :start():
+    while_True = {main()};
+    end;
+
+start()
+if one == 1 { start() };
